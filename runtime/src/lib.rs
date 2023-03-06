@@ -313,7 +313,6 @@ impl pallet_voting::Config for Runtime {
 	type Currency = Balances;
 	type MaxVotes = ConstU32<100>;
 	type MaxSubjects = ConstU32<100>;
-
 }
 
 pub struct AuthorityToAccount;
@@ -326,8 +325,6 @@ impl Convert<AuraId, AccountId> for AuthorityToAccount {
 			.expect("We expect every authority id from aura to be the same an an account id.")
 	}
 }
-
-
 
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(

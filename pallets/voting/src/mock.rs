@@ -74,7 +74,7 @@ impl pallet_voting::Config for Test {
 	type Currency = Balances;
 	type MaxVotes = ConstU32<100>; // We put MaxVotes in the runtime aswell (and mock to simulate the runtime)
 	type MaxSubjects = ConstU32<100>; // We put MaxSubjects in the runtime aswell (and mock to simulate the runtime)
-
+	type MaxAlternatives = ConstU32<100>; // We put MaxAlternatives in the runtime aswell (and mock to simulate the runtime)
 }
 
 // Build genesis storage according to the mock runtime.
